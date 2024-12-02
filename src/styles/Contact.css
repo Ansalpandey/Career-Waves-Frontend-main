@@ -1,0 +1,192 @@
+/* Base Styles for Contact Page */
+.contact-container {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 40px 20px;
+  width: 100%;
+}
+
+.contact-box {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-title {
+  font-size: 28px;
+  color: #efeded;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.contact-subtitle {
+  font-size: 16px;
+  color: #cbc4c4;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-input,
+.contact-textarea {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.contact-button {
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  background: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-button:hover {
+  background: #0056b3;
+}
+
+.contact-footer {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.contact-link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
+
+/* Tablet and Mobile Styles */
+@media (max-width: 1024px) {
+  .contact-container {
+    margin: 40px auto;
+    padding: 30px 15px; /* Adjust padding for tablets */
+  }
+
+  .contact-box {
+    padding: 25px; /* Slightly reduce padding for smaller devices */
+  }
+
+  .contact-title {
+    font-size: 24px; /* Smaller font size for tablets */
+  }
+
+  .contact-subtitle {
+    font-size: 14px; /* Smaller subtitle text */
+  }
+
+  .contact-form {
+    gap: 12px; /* Slightly reduce the gap between fields */
+  }
+
+  .contact-input,
+  .contact-textarea {
+    font-size: 15px; /* Slightly larger font size for inputs */
+    padding: 12px; /* Increase padding to make inputs easier to interact with */
+  }
+
+  .contact-button {
+    font-size: 14px; /* Smaller button font */
+    padding: 12px; /* Adjust button padding */
+  }
+
+  .contact-footer {
+    font-size: 12px; /* Smaller footer text */
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    margin: 30px auto;
+    padding: 20px 10px; /* Reduce padding for mobile */
+  }
+
+  .contact-box {
+    padding: 20px; /* Adjust padding for mobile */
+  }
+
+  .contact-title {
+    font-size: 22px; /* Further reduce font size */
+  }
+
+  .contact-subtitle {
+    font-size: 12px; /* Even smaller subtitle text */
+  }
+
+  .contact-form {
+    gap: 10px; /* Further reduce gap between fields */
+  }
+
+  .contact-input,
+  .contact-textarea {
+    font-size: 14px; /* Further reduce font size for smaller screens */
+    padding: 10px; /* Adjust padding for small screens */
+  }
+
+  .contact-button {
+    font-size: 13px; /* Smaller font size for button */
+    padding: 10px; /* Adjust button padding */
+  }
+
+  .contact-footer {
+    font-size: 12px; /* Smaller footer text */
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-container {
+    margin: 175px auto;
+    padding: 9px 12px; /* Further reduce padding for very small screens */
+  }
+
+  .contact-box {
+    padding: 15px; /* Further reduce padding */
+  }
+
+  .contact-title {
+    font-size: 20px; /* Reduce font size for smaller screens */
+  }
+
+  .contact-subtitle {
+    font-size: 12px; /* Even smaller subtitle text */
+  }
+
+  .contact-form {
+    gap: 8px; /* Reduce gap between fields */
+  }
+
+  .contact-input,
+  .contact-textarea {
+    font-size: 12px; /* Further reduce font size */
+    padding: 8px; /* Adjust padding for small mobile screens */
+  }
+
+  .contact-button {
+    font-size: 12px; /* Smaller button font */
+    padding: 8px; /* Adjust button padding */
+  }
+
+  .contact-footer {
+    font-size: 10px; /* Very small footer text */
+  }
+}

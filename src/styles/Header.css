@@ -1,0 +1,113 @@
+/* Base Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #14131c;
+  width: 100%;
+  height: 78px;
+  padding: 0 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 80px;
+  height: auto;
+  margin-right: 8px;
+}
+
+.logo span {
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+}
+
+/* Desktop Navbar */
+.nav-menu {
+  display: flex; /* Maintain horizontal layout */
+  list-style: none;
+  gap: 40px; /* Adjust space between items */
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu li {
+  font-size: 17px;
+}
+
+.my-link {
+  text-decoration: none;
+  color: white;
+}
+
+.my-link:hover {
+  color: #ddd;
+}
+
+.register-btn,
+.login-btn {
+  background-color: #2b2838;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Mobile Menu Toggle Button */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Mobile Styles (Phones Only) */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* Show the toggle button only on mobile */
+  }
+
+  /* Hide the desktop-style navbar on mobile */
+  .nav-menu {
+    display: none; /* Initially hidden */
+    position: absolute;
+    top: 78px;
+    right: 0;
+    background-color: #14131c;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding: 20px;
+    z-index: 10;
+    gap: 20px;
+  }
+
+  /* Show the dropdown when the menu is open */
+  .nav-menu.open {
+    display: flex;
+  }
+
+  .nav-menu li {
+    width: 100%;
+    text-align: left; /* Align items in the dropdown */
+  }
+}
+
+/* Tablet and Desktop Style */
+@media (min-width: 769px) {
+  .nav-menu {
+    display: flex; /* Horizontal layout */
+  }
+
+  .menu-toggle {
+    display: none; /* Hide hamburger on tablets and desktops */
+  }
+}

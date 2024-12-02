@@ -1,0 +1,134 @@
+/* Base Styles for Desktop */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  background-color: #14131c;
+}
+
+.hero-text {
+  flex: 1;
+  padding-left: 9rem;
+  padding-top: 4rem;
+}
+
+.hero h1 {
+  font-size: 53px;
+  width: 24rem;
+}
+
+.hero p {
+  margin: 20px 0;
+}
+
+.hero-btn {
+  background-color: #2b2838;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  cursor: pointer;
+  margin-top: 3rem;
+}
+
+.hero-image {
+  flex: 1 0 500px; /* Allow flex to respect width but not grow */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 100%; /* Ensure image is responsive */
+  padding-right: 12rem;
+  background-color: transparent; /* Set background to transparent */
+  overflow: hidden; /* Prevents overflow of image */
+}
+
+.hero-image img {
+  width: 100%; /* Makes the image responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+#para {
+  font-size: 20px;
+  width: 36rem;
+}
+
+/* Tablet Styles (Portrait Mode) */
+@media (max-width: 1024px) {
+  .hero {
+    flex-direction: column-reverse; /* Stack image on top of text */
+    padding: 30px; /* Reduce padding for better fit */
+  }
+
+  .hero-text,
+  .hero-image {
+    flex: none; /* Prevent items from stretching */
+  }
+
+  .hero-text {
+    padding-left: 0;
+    padding-top: 2rem; /* Adjust padding for better alignment */
+    text-align: center; /* Center align text */
+  }
+
+  .hero h1 {
+    font-size: 40px; /* Reduce font size for tablets */
+    width: auto; /* Allow the text to wrap */
+  }
+
+  #para {
+    font-size: 18px;
+    width: auto;
+  }
+
+  .hero-btn {
+    padding: 12px 25px; /* Make the button smaller for tablets */
+    margin-top: 2rem; /* Adjust margin */
+  }
+
+  .hero-image {
+    width: 90%;
+    max-width: 400px;
+    padding-right: 0;
+    margin-top: 4rem;
+    margin-left: 11rem; /* No margin for better alignment */
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column-reverse; /* Stack image on top of text */
+    padding: 20px;
+  }
+
+  .hero-text {
+    padding-left: 0;
+    padding-top: 2rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 30px; /* Reduce font size for mobile */
+    width: auto; /* Allow the text to wrap */
+  }
+
+  #para {
+    font-size: 16px;
+    width: auto;
+  }
+
+  .hero-btn {
+    padding: 10px 20px; /* Reduce button size */
+    margin-top: 2rem;
+  }
+
+  .hero-image {
+    width: 80%; /* Make the image a bit smaller on mobile */
+    max-width: 300px; /* Limit the max-width of the image */
+    margin-top: 2rem; /* Add space between text and image */
+    margin-left: 2rem; /* Adjust margin for better alignment */
+  }
+
+  .hero-image img {
+    width: 100%; /* Image will fill the container */
+    height: auto; /* Maintain aspect ratio */
+  }
+}

@@ -1,0 +1,93 @@
+.welcome {
+  display: flex;
+  grid-template-columns: 1fr 1fr; /* Image on the left, text on the right */
+  gap: 40px;
+  padding: 8rem;
+  align-items: center;
+  background-color: #14131c;
+}
+
+.welcome-text {
+  font-size: 20px;
+  color: white;
+  padding-left: 2rem;
+}
+
+.welcome-text h2 {
+  font-size: 52px;
+  margin-bottom: 20px;
+}
+
+.welcome ul {
+  list-style: disc;
+  padding-left: 20px;
+  margin: 20px 0;
+}
+
+.welcome ul li {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.welcome-image {
+  display: flex;
+  justify-content: flex-start; /* Aligns image to the left */
+}
+
+.welcome-image img {
+  width: 100%; /* Responsive width */
+}
+
+/* Responsive Styles for Tablet and Mobile */
+@media (max-width: 1024px) {
+  .welcome {
+    grid-template-columns: 1fr; /* Stacks image and text on top of each other */
+    text-align: center; /* Center align text */
+    padding: 4rem 2rem; /* Adjust padding for smaller screens */
+  }
+
+  .welcome-image {
+    justify-content: center; /* Center align image */
+    width: 80%; /* Make the image a bit smaller on tablet */
+    margin-bottom: 2rem; /* Add spacing between image and text */
+  }
+
+  .welcome-image img {
+    width: 100%; /* Image will fill the container */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .welcome-text {
+    padding-left: 0; /* Remove padding for smaller screens */
+    font-size: 18px; /* Reduce font size for better readability on tablets */
+  }
+
+  .welcome-text h2 {
+    font-size: 36px; /* Make the heading smaller */
+  }
+
+  .welcome ul li {
+    font-size: 20px; /* Adjust font size for mobile */
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .welcome {
+    flex-direction: column; /* Stack items vertically */
+    padding: 2rem 1rem; /* Adjust padding for mobile devices */
+  }
+
+  .welcome-image {
+    width: 70%; /* Make the image smaller for mobile */
+    margin-bottom: 2rem; /* Add spacing between image and text */
+  }
+
+  .welcome-text h2 {
+    font-size: 28px; /* Reduce font size of heading */
+  }
+
+  .welcome ul li {
+    font-size: 18px; /* Reduce font size of list items */
+  }
+}

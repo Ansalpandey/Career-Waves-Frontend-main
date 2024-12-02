@@ -1,0 +1,118 @@
+/* Base Styles for Footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #dbb064;
+  color: #333;
+  position: relative;
+  bottom: -130px;
+}
+
+.footer-logo img {
+  width: 200px;
+  height: auto;
+}
+
+.footer-content {
+  display: flex;
+  gap: 30px;
+}
+
+.footer-section {
+  flex: 1;
+  position: relative;
+  left: -35px;
+}
+
+.footer-section h3 {
+  font-size: 23px;
+  margin-bottom: 15px;
+}
+
+.footer-section h3:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.footer-section ul,
+.footer-section p {
+  font-size: 18px;
+  list-style: none;
+  padding: 0;
+  font-weight: 500;
+}
+
+.social-icons a {
+  display: block;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+/* Tablet and Mobile Styles */
+@media (max-width: 1024px) {
+  .footer {
+    flex-direction: row; /* Stack the sections vertically for tablets */
+    padding: 30px 96px; /* Adjust padding for a better fit */
+  }
+
+  .footer-logo img {
+    width: 150px; /* Slightly smaller logo on tablets */
+    margin-bottom: 20px; /* Add space below the logo */
+  }
+
+  .footer-content {
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center content */
+    gap: 20px; /* Reduce the gap between sections */
+  }
+
+  .footer-section {
+    position: relative;
+    left: 0; /* Remove offset on smaller screens */
+    text-align: center; /* Center text for readability */
+  }
+
+  .footer-section h3 {
+    font-size: 20px; /* Adjust the font size for tablet */
+  }
+
+  .footer-section ul,
+  .footer-section p {
+    font-size: 16px; /* Smaller font size on tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 20px 10px;
+    flex-direction: row; /* Further reduce padding for mobile */
+  }
+
+  .footer-logo img {
+    width: 120px; /* Even smaller logo on mobile */
+    margin-bottom: 15px; /* Add margin for better spacing */
+  }
+
+  .footer-content {
+    flex-direction: column; /* Stack sections vertically on mobile */
+    align-items: center; /* Center align content */
+    gap: 15px; /* Reduce gap further */
+  }
+
+  .footer-section {
+    position: relative;
+    left: 0;
+    text-align: center;
+  }
+
+  .footer-section h3 {
+    font-size: 13px; /* Further reduce heading size */
+  }
+
+  .footer-section ul,
+  .footer-section p {
+    font-size: 11px; /* Reduce text size for mobile */
+  }
+}

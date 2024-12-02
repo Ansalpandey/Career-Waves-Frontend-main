@@ -1,0 +1,67 @@
+.header {
+  width: 100%; /* Ensure full width */
+  padding: 20px; /* Add padding if needed */
+  background-color: #14131c; /* Match the background color */
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-around; /* Space between logo and navigation */
+  align-items: center; /* Center align items vertically */
+  position: relative; /* Position relative if needed for additional styling */
+  z-index: 10; /* Optional: set z-index if you have overlapping elements */
+}
+
+.courses__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6rem;
+  padding: 0px 80px 6px 80px;
+  margin-top: 6rem;
+}
+
+.course {
+  background: #14131c;
+  text-align: center;
+  border: 1px solid transparent;
+  transition: 0.3s ease;
+}
+
+.course:hover {
+  background: transparent;
+  border-color: #1f8afd;
+}
+
+.course__image img {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid #ddd;
+}
+
+.course__info {
+  padding: 2rem;
+}
+
+.course__info h4 {
+  font-size: 1.25rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.course__info p {
+  margin: 1.2rem 0 2rem;
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.btn-primary {
+  background-color: #1f8afd;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+  background-color: #007bff;
+}
